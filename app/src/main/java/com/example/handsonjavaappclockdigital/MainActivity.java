@@ -2,6 +2,7 @@ package com.example.handsonjavaappclockdigital;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextClock;
 import android.widget.TextView;
@@ -18,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     private TextClock txtHoraAtual, txtHora24PM_AM;
 
-    private Button btnAtualizarHora;
+
+    private Button btnUpdadeHoraAtual;
 
 
     @Override
@@ -34,15 +36,26 @@ public class MainActivity extends AppCompatActivity {
 
         iniciarComponentesDeLayout();
 
+        capturaHoraAtual();
+
     }
+
+    private void capturaHoraAtual() {
+        btnUpdadeHoraAtual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                txtUpdateHoraAtual.setText("Hora: " + txtHora24PM_AM.getText());
+            }
+        });
+    }
+
 
     private void iniciarComponentesDeLayout() {
         txtUpdateHoraAtual = findViewById(R.id.txtUpdateHoraAtual);
         txtHoraAtual = findViewById(R.id.txtHoraAtual);
         txtHora24PM_AM = findViewById(R.id.txtHora24PM_AM);
-        btnAtualizarHora = findViewById(R.id.btnUpdateHoraAtual);
+        btnUpdadeHoraAtual = findViewById(R.id.btnUpdateHoraAtual);
+
 
     }
-
-
 }

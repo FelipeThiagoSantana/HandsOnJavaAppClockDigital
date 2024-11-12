@@ -12,17 +12,16 @@
         android:id="@+id/textAppName"
         android:layout_width="0dp"
         android:layout_height="29dp"
+        android:layout_marginTop="32dp"
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="#7BFBDF"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextClock
         android:id="@+id/txtHoraAtual"
@@ -57,10 +56,12 @@
 
     <TextView
         android:id="@+id/txtUpdateHoraAtual"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="#6D151313"
         android:text="Hora Atual"
+        android:textAlignment="center"
         android:textColor="#8BFBE3"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
