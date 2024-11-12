@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void capturaHoraAtual() {
         btnUpdadeHoraAtual.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 txtUpdateHoraAtual.setText("Hora: " + txtHora24PM_AM.getText());
